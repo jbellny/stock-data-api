@@ -4,7 +4,7 @@ const app = require('express')()
 const port = process.env.PORT || 8008
 // const secretKey = process.env.SECRET_PASS
 
-// app.use(require('cors')())
+app.use(require('cors')())
 
 app.get('/', (req, res) => {
     res.status(200).send('<h1>Simba API</h1>')
